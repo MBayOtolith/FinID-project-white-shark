@@ -1,0 +1,1 @@
+This folder is empty, you will run the script and generate transformed images into this directory.

@@ -12,12 +12,12 @@ This repository contains the script for generating randomly transformed shark fi
 Below is the directory structure; here we have 2 shark fin examples (`AN19111104.png` and `AN19112302.png`):
 
 ```
-	├── generate_images.py     <- main script
-    ├── AN19111104.png          <- shark fin image example 1
-    ├── AN19112302.png          <- shark fin image example 1
-    ├── transformed_dataset     <- transformed dataset folder
-        ├── AN19111104          <- for storing newly transformed shark fin images
-        ├── AN19112302          <- for storing newly transformed shark fin images
+    ├── generate_images.py       <- main script
+    ├── AN19111104.png           <- shark fin image example 1
+    ├── AN19112302.png           <- shark fin image example 1
+    ├── transformed_dataset      <- transformed dataset folder
+          ├── AN19111104         <- for storing newly transformed shark fin images
+          ├── AN19112302         <- for storing newly transformed shark fin images
 ```
 Note that the `transformed_dataset` folder is empty. You will use the main script `generate_images.py` to generate transformed images into your directory.
 
@@ -31,8 +31,8 @@ You will parse 3 command line arguments to run the code:
 
 ## Run
 Examples:
-`python generate_images.py --image AN19111104.png --output transformed_dataset/AN19111104` (default: 100 images)
-`python generate_images.py --image AN19112302.png --output transformed_dataset/AN19112302 --total 200` (specify to generate 200 images)
+- `python generate_images.py --image AN19111104.png --output transformed_dataset/AN19111104` (default: 100 images)
+- `python generate_images.py --image AN19112302.png --output transformed_dataset/AN19112302 --total 200` (specify to generate 200 images)
 
 ## Transformation arguments
 In the main script `generate_images.py`, starting `L31` where you can adjust the transformation parameters, such as the degrees of rotations, scale, shearing, horizontal and vertical flips. See `ImageDataGenerator class` in Keras [documentation](https://keras.io/preprocessing/image/) for more details.

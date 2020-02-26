@@ -11,12 +11,10 @@ There are 3 ways to download the dataset:
 
 - 1. The simplest way to download the dataset is to copy and paste the below urls into your browser:
 
-For single dataset zip file: `https://finid-public.s3.amazonaws.com/dataset.zip`
+For single dataset zip file (566 MB): `https://finid-public.s3.amazonaws.com/dataset.zip`
 You will also need the dataset summary: `https://finid-public.s3.amazonaws.com/FinID_num_images_summary_02_17_2020.csv`
 
-- 2. AWS CLI (Command Line Interface) is also recommended to download the dataset from S3 bucket. The installation instruction can be found [here](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html). To confirm the successful installation, type command `aws --version`. If you get error message: `ImportError: No module named 'awscli'`, this [resource](https://stackoverflow.com/questions/43873663/awscli-fails-to-work-no-module-named-awscli) might solve the issue.
-
-You will need a proper AWS crenditials for this method. To download, `cd` into your directory, for example `finid_dataset`, type command `aws s3 sync s3://finid-public/dataset/ .` The dataset will be downloaded to the folder `finid_dataset`. To list all objects and folders in S3 bucket, use the command `aws s3 ls s3://finid-public/`.
+- 2. AWS CLI (Command Line Interface) is also recommended to download the dataset from S3 bucket. The installation instruction can be found [here](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html). To confirm the successful installation, type command `aws --version`. If you get error message: `ImportError: No module named 'awscli'`, this [resource](https://stackoverflow.com/questions/43873663/awscli-fails-to-work-no-module-named-awscli) might solve the issue. You will need a proper AWS crenditials for this method. To download, `cd` into your directory, for example `finid_dataset`, type command `aws s3 sync s3://finid-public/dataset/ .` The dataset will be downloaded to the folder `finid_dataset`. To list all objects and folders in S3 bucket, use the command `aws s3 ls s3://finid-public/`.
 
 - 3. You can also utilize [boto3](https://github.com/boto/boto3) to download the dataset. The script to download the dataset is still under development and will be provided soon.
 

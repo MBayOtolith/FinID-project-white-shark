@@ -37,16 +37,23 @@ Examples:
 ## Transformation arguments
 In the main script `generate_images.py`, starting `L31` where you can adjust the transformation parameters, such as the degrees of rotations, scale, shearing, horizontal and vertical flips. See `ImageDataGenerator class` in Keras [documentation](https://keras.io/preprocessing/image/) for more details.
 
+## [Advanced functionality] Adding Gaussian noise
+Here we use [imgaug](https://github.com/aleju/imgaug) package for adding Gaussian noise layer. Install with pip: `pip install imgaug`; install with Anaconda: `conda config --add channels conda-forge`, then `conda install imgaug`. To adjust Gaussian noise parameters, refer to `L32` in `generat_images_gaussian_noise.py`. To run:
+
+- `python generate_images_gaussian_noise.py --image AN19111104.png --output transformed_dataset/AN19111104` (default: 100 images)
+- `python generate_images_guassian_noise.py --image AN19112302.png --output transformed_dataset/AN19112302 --total 200` (specify to generate 200 images)
+
 ## Requirements
 - [Anaconda / Python 3.6](https://www.continuum.io/downloads)
 - [TensorFlow 1.12](https://www.tensorflow.org/)
 - [Keras 2.2](https://keras.io/)
+- [imgaug](https://github.com/aleju/imgaug)
 
 ## Contact
 zacycliu@stanford.edu
 
 ## Last updated
-Feb 11, 2020
+Feb 26, 2020
 
 
 

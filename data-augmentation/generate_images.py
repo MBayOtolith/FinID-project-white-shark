@@ -1,6 +1,6 @@
 # USAGE
-# python generate_images.py --image dog.jpg --output generated_dataset/dogs
-# python generate_images.py --image cat.jpg --output generated_dataset/cats
+# python generate_images.py --image AN19111104.png --output transformed_dataset/AN19111104
+# python generate_images.py --image AN19112302.png --output transformed_dataset/AN19112302 --total 200
 
 # import the necessary packages
 from keras.preprocessing.image import ImageDataGenerator

@@ -38,10 +38,10 @@ Examples:
 In the main script `generate_images.py`, starting `L31` where you can adjust the transformation parameters, such as the degrees of rotations, scale, shearing, horizontal and vertical flips. See `ImageDataGenerator class` in Keras [documentation](https://keras.io/preprocessing/image/) for more details.
 
 ## [Advanced functionality] Adding Gaussian noise
-Here we use [imgaug](https://github.com/aleju/imgaug) package for adding Gaussian noise layer. Install with pip: `pip install imgaug`; install with Anaconda: `conda config --add channels conda-forge`, then `conda install imgaug`. To adjust Gaussian noise parameters, refer to `L32` in `generat_images_gaussian_noise.py`. To run:
+Here we use [imgaug](https://github.com/aleju/imgaug) package for adding Gaussian noise/ blurring layer. Install with pip: `pip install imgaug`; install with Anaconda: `conda config --add channels conda-forge`, then `conda install imgaug`. To adjust parameters, refer to `L67` and `L68`in `generat_images_gaussian_noise.py` for additive Gaussian noise and Gaussian blurring, respectively. The script will add either additive Gaussian noise or Gaussian blurring (randomly select) to the augmented images and store in another directory (that you have to specify with `--dir`). To run:
 
-- `python generate_images_gaussian_noise.py --image AN19111104.png --output transformed_dataset/AN19111104` (default: 100 images)
-- `python generate_images_guassian_noise.py --image AN19112302.png --output transformed_dataset/AN19112302 --total 200` (specify to generate 200 images)
+- `python generate_images_gaussian_noise.py --image AN19111104.png --output transformed_dataset/AN19111104 --dir transformed_dataset/AN19111104_Gaussian` (default: 100 images)
+- `python generate_images_gaussian_noise.py --image AN19112302.png --output transformed_dataset/AN19112302 --dir transformed_dataset/AN19112302_Gaussian --total 200` (specify to generate 200 images)
 
 ## Requirements
 - [Anaconda / Python 3.6](https://www.continuum.io/downloads)
@@ -53,7 +53,7 @@ Here we use [imgaug](https://github.com/aleju/imgaug) package for adding Gaussia
 zacycliu@stanford.edu
 
 ## Last updated
-Feb 26, 2020
+March 3, 2020
 
 
 

@@ -12,12 +12,14 @@ This repository contains the script for generating randomly transformed shark fi
 Below is the directory structure; here we have 2 shark fin examples (`AN19111104.png` and `AN19112302.png`):
 
 ```
-    ├── generate_images.py       <- main script
-    ├── AN19111104.png           <- shark fin image example 1
-    ├── AN19112302.png           <- shark fin image example 1
-    ├── transformed_dataset      <- transformed dataset folder
-          ├── AN19111104         <- for storing newly transformed shark fin images
-          ├── AN19112302         <- for storing newly transformed shark fin images
+    ├── generate_images.py         <- main script
+    ├── AN19111104.png             <- shark fin image example 1
+    ├── AN19112302.png             <- shark fin image example 1
+    ├── transformed_dataset        <- transformed dataset folder
+          ├── AN19111104           <- for storing newly transformed shark fin images
+          ├── AN19112302           <- for storing newly transformed shark fin images
+          ├── AN19111104_Gaussian  <- for storing newly transformed shark fin images (plus Gaussian filters)
+          ├── AN19112302_Gaussian  <- for storing newly transformed shark fin images (plus Gaussian filters)
 ```
 Note that the `transformed_dataset` folder is empty. You will use the main script `generate_images.py` to generate transformed images into your directory.
 
